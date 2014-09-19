@@ -15,10 +15,10 @@ var users = require('./routes/users');
 
 var app = express();
 
-//var uri = "mongodb://sajan:sajan123@proximus.modulusmongo.net:27017/igetew9A";
-var urilocal = "mongodb://localhost:27017/onlinenotes";
+var uri = "mongodb://sajan:sajan123@proximus.modulusmongo.net:27017/igetew9A";
+//var urilocal = "mongodb://localhost:27017/onlinenotes";
 //mongoose.connect('mongodb://localhost:27017/onlinenotes');
-mongoose.connect(urilocal);
+mongoose.connect(uri);
 
 var mongooseStore = new MongooseStore({
     url: urilocal
